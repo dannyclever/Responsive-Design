@@ -91,3 +91,21 @@ footer {
     background-color: green;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .cover,
+  .latest,
+  .sections,
+  .deals {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  #cov1,
+  #cov2,
+  #cov3 {
+    grid-column: 1/2;
+    /* grid-template-rows: 1fr; */
+    background-color: green;
+  }
+}
