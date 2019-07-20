@@ -44,3 +44,34 @@ main {
 .latest article {
   background-color: greenyellow;
 }
+.deals-header {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.deals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0.9rem;
+  background-color: bisque;
+}
+.deals header {
+  grid-column: 1 / -1;
+  background-color: red;
+}
+.deals article {
+  background-color: greenyellow;
+}
+.sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0.9rem;
+}
+.sections section {
+  background-color: greenyellow;
+}
+footer {
+  background-color: gray;
+}
