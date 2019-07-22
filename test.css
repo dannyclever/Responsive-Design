@@ -2,6 +2,8 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: bisque;
+  height: 50px;
+  font-family: Shentox,sans-serif;
 }
 nav li {
   display: inline-flex;
@@ -109,3 +111,14 @@ footer {
     background-color: green;
   }
 }
+
+#logo {
+ width: 100px;
+ height: auto;
+}
+
+#search-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+ }
