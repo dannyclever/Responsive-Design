@@ -46,25 +46,25 @@ main {
 .cover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 0.9rem;
-  /* background-color: bisque; */
+  grid-template-rows: repeat(2, 220px);
+  grid-gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  background-image: linear-gradient(#ddd, #fff);
 }
+
 #cov1 {
   grid-column: 1/3;
   grid-row: 1 / 3;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/48277426_313452909267602_4799579228330786816_n-e1546869167632-796x448.jpg");
-
-  width: 796px;
-  height: 448px;
+  background-image: url("img/cov1.jpg");
+  background-size: cover;
 }
- #cov2 {
-  background-image: url(https://thenextweb.com/in/2019/07/22/indias-chandrayaan-2-rocket-launch-is-a-success/);
-  width: 700px;
-  height: 400px;
-} 
+#cov2 {
+  background-image: url("img/cov2.jpg");
+  background-size: cover;
+}
 #cov3 {
-  background-color: greenyellow;
+  background-image: url("img/cov3.png");
+  background-size: cover;
 }
 .latest {
   display: grid;
@@ -113,6 +113,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .cover {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 180px);
+  }
   .deals {
     grid-template-columns: repeat(3, 1fr);
     background-color: bisque;
@@ -129,7 +134,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .cover,
+  .cover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 180px);
+  }
+  #cov1 {
+    grid-row: 1/2;
+  }
   .latest,
   .sections,
   .deals {
