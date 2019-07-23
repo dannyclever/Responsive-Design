@@ -91,6 +91,14 @@ main {
 #cov3 {
   background-image: url("img/cov3.png");
   background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  mix-blend-mode: darken;
+  color: white;
 }
 .cover-gradient {
   background: transparent url("img/cover-gradient.png") no-repeat;
@@ -124,7 +132,7 @@ main {
 .cover-header,
 .cover2-header {
   position: absolute;
-  bottom: 4px;
+  bottom: -10px;
   left: 4px;
   right: 4px;
   z-index: 7;
@@ -135,6 +143,7 @@ main {
   left: 2%;
   top: 30px;
   font-size: 14px;
+  font-weight: 300;
 }
 .cover-header h2 {
   position: relative;
@@ -166,6 +175,23 @@ main {
   color: #fff;
 }
 /* end of #cov1 */
+.cover2-header h5 {
+  position: relative;
+  left: 2%;
+  top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.cover2-header h2 {
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1;
+  padding-right: 5px;
+  left: 2%;
+  right: 2%;
+}
 
 .latest {
   display: grid;
@@ -178,9 +204,6 @@ main {
   grid-column: 1 / -1;
   background-color: greenyellow;
 }
-/*.latest article {
-  background-color: greenyellow;
-} */
 .deals-header {
   display: inline-flex;
   flex-direction: row;
@@ -219,12 +242,28 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 180px);
   }
+
   .deals {
     grid-template-columns: repeat(3, 1fr);
     background-color: bisque;
   }
-  .hide {
+  .hide,
+  .cover-logo,
+  .cover-date {
     display: none;
+  }
+  .cover-header h2 {
+    font-size: 40px;
+  }
+  .cover2-header h2 {
+    font-size: 1.2em;
+  }
+  .cover-header h5 {
+    position: relative;
+    left: 2%;
+    top: 10px;
+    font-size: 12px;
+    font-weight: 400;
   }
   .sections {
     grid-template-columns: repeat(2, 1fr);
@@ -239,6 +278,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 180px);
+  }
+  .cover-header h2,
+  .cover2-header h2 {
+    font-size: 1.2em;
   }
   #cov1 {
     grid-row: 1/2;
@@ -369,5 +412,3 @@ footer {
   background-repeat: no-repeat;
   opacity: 1;
 }
-
-/* copied content  */
