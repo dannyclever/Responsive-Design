@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0px;
+  min-height: 100%;
+  font-family: "Arimo", sans-serif;
+}
+
+/* main headline*/
+.cover-image {
+  background-image: url("img/cov1.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  grid-area: art1;
+  position: relative;
+  mix-blend-mode: darken;
+}
+
+.cover-gradient {
+  background: transparent url("img/cover-gradient.png") no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 6;
+  mix-blend-mode: lighten;
+  transition: 0.4s ease;
+}
+
+.cover-gradient:hover {
+  mix-blend-mode: darken;
+}
+
+.cover-logo {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  max-width: 50%;
+  height: 112px;
+  z-index: 7;
+}
+
+.cover-date {
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 7;
+}
+
+.main-header {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  z-index: 7;
+  padding: 5px;
+}
+
+.main-header h5 {
+  position: relative;
+  color: #fff;
+  left: 2%;
+  top: 10px;
+  font-size: 14px;
+}
+
+.main-header h2 {
+  position: relative;
+  color: #fff;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 1;
+  padding-right: 5px;
+  left: 2%;
+  right: 2%;
+}
+
+.by {
+  position: relative;
+  color: #fff9;
+  bottom: 0.3em;
+  left: 2%;
+  font-size: 12px;
+}
+
+.fa-clock,
+.fa-share-alt {
+  padding: 0px 5px;
+}
