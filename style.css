@@ -1,3 +1,7 @@
+* {
+  /* box-sizing: border-box; */
+  font-family: Shentox, sans-serif;
+}
 body {
   margin: 0;
 }
@@ -57,10 +61,6 @@ main {
   width: 796px;
   height: 448px;
 }
-/* #cov2,
-  #cov3 {
-    background-color: greenyellow;
-  } */
 .latest {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
