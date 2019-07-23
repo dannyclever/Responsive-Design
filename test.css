@@ -30,6 +30,11 @@ nav a {
 nav a:hover {
   color: #555;
 }
+header,
+article {
+  display: block;
+}
+
 #logo {
   width: 107px;
   height: 50px;
@@ -116,7 +121,8 @@ main {
   right: 24px;
   z-index: 8;
 }
-.cover-header {
+.cover-header,
+.cover2-header {
   position: absolute;
   bottom: 4px;
   left: 4px;
@@ -160,17 +166,6 @@ main {
   color: #fff;
 }
 /* end of #cov1 */
-
-.cover2by {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  color: #fff9;
-  bottom: 0.3em;
-  left: -20px;
-  font-size: 12px;
-  list-style-type: none;
-}
 
 .latest {
   display: grid;
