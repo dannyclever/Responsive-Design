@@ -74,7 +74,14 @@ main {
 }
 #cov2 {
   background-image: url("img/cov2.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  position: relative;
+  mix-blend-mode: darken;
+  color: white;
 }
 #cov3 {
   background-image: url("img/cov3.png");
@@ -153,6 +160,16 @@ main {
   color: #fff;
 }
 /* end of #cov1 */
+.cover2by {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: #fff9;
+  bottom: 0.3em;
+  left: -20px;
+  font-size: 12px;
+  list-style-type: none;
+}
 
 .latest {
   display: grid;
