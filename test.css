@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  font-family: Shentox, sans-serif;
+}
 body {
   margin: 0;
 }
@@ -93,11 +97,11 @@ main {
   top: 84px;
 }
 .cover-date {
-  display: none;
+  display: block;
+  position: absolute;
   top: 16px;
   color: #fff;
-  position: absolute;
-  right: 24px;
+  right: 124px;
   z-index: 5;
 }
 
