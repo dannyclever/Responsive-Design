@@ -92,6 +92,15 @@ main {
   max-height: 112px;
   top: 84px;
 }
+.cover-date {
+  display: none;
+  top: 16px;
+  color: #fff;
+  position: absolute;
+  right: 24px;
+  z-index: 5;
+}
+
 .latest {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -189,7 +198,6 @@ footer {
   nav li {
     display: none;
   }
-
   #burger {
     width: 18px;
     height: 18px;
@@ -198,3 +206,5 @@ footer {
     display: inline-block;
   }
 }
+
+/* copied content  */
