@@ -227,8 +227,6 @@ main {
 .latest h4 a {
   text-decoration: none;
   color: #000;
-  /* font-size: 16px; */
-  /* line-height: 20px; */
 }
 .latest h4 a:hover {
   text-decoration: underline;
@@ -243,9 +241,6 @@ main {
 .latest .coverby a:hover {
   color: #222;
 }
-/* .story {
-  display: block;
-} */
 
 #latest1,
 #latest2,
@@ -258,7 +253,7 @@ main {
   background-color: #000;
   background-size: cover;
   background-position: 50%;
-  height: 135px;
+  height: 140px;
   width: 100%;
   display: block;
   margin-bottom: 8px;
@@ -378,7 +373,7 @@ footer {
   .deals {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    /* grid-template-rows: repeat(3, auto); */
   }
   #cov1,
   #cov2,
@@ -400,6 +395,12 @@ footer {
     padding: 16px;
     border-left: 1px solid #ccc;
     display: inline-block;
+  }
+  article .story-img,
+  #latest1,
+  #latest3 {
+    width: 76px;
+    height: 76px;
   }
 }
 /* Latest news styles */
