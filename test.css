@@ -300,10 +300,46 @@ main {
 }
 .deals header {
   grid-column: 1 / -1;
-  background-color: red;
+  background-color: white;
 }
 .deals article {
-  background-color: greenyellow;
+  background-color: white;
+}
+
+.investiments > div {
+    position: relative;
+    display: block;
+}
+
+.deals-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    margin: 11px;
+    display: block;
+}
+
+.item-h4 {
+    background-color: #f42;
+    font-family: var(--source-sans);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    padding: 11px 16px;
+    padding-left: 84px;
+}
+
+.item-desc {
+    font-family: var(--source-sans);
+    font-weight: 700;
+    line-height: 1;
+    padding: 11px 16px;
+    padding-left: 84px;
+    color: #000;
+    background-color: #FFEBE7;
 }
 .sections {
   display: grid;
