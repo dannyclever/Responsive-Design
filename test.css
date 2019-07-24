@@ -206,17 +206,24 @@ main {
   left: 2%;
   right: 2%;
 }
-
+.wrapper {
+  margin: 0 16px;
+}
 .latest {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-gap: 0.9rem;
-  background-color: bisque;
 }
 .latest h2 {
   grid-column: 1 / -1;
-  background-color: greenyellow;
+  color: #f42;
+}
+.latest h2:hover {
+  color: #000;
+}
+.story {
+  display: block;
 }
 .deals-header {
   display: inline-flex;
@@ -332,13 +339,15 @@ footer {
 }
 /* Latest news styles */
 #latest1 {
+  display: block;
   background-image: url(img/latestNews-img/latest1.png);
   background-color: #000;
   background-size: cover;
   background-position: 50%;
-  height: 135px;
+  /* height: auto; */
+  overflow: hidden;
+  padding-top: 50%;
   width: 100%;
-  display: block;
   margin-bottom: 8px;
   background-repeat: no-repeat;
   opacity: 1;
@@ -427,7 +436,4 @@ footer {
   background-repeat: no-repeat;
   opacity: 1;
 }
-<<<<<<< HEAD
 /* copied content  */
-=======
->>>>>>> 0cb8518f3396b7060ee199112add93a71581ae73
