@@ -206,6 +206,7 @@ main {
   left: 2%;
   right: 2%;
 }
+/* Latest News */
 .wrapper {
   margin: 0 16px;
 }
@@ -223,9 +224,58 @@ main {
 .latest h2:hover {
   color: #000;
 }
+.latest h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
 .story {
   display: block;
 }
+
+#latest1,
+#latest2,
+#latest3,
+#latest4,
+#latest5,
+#latest6,
+#latest7,
+#latest8 {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  height: 135px;
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+#latest1 {
+  background-image: url(img/latestNews-img/latest1.png);
+}
+#latest2 {
+  background-image: url(img/latestNews-img/latest2.jpg);
+}
+#latest3 {
+  background-image: url(img/latestNews-img/latest3.png);
+}
+#latest4 {
+  background-image: url(img/latestNews-img/latest4.png);
+}
+#latest5 {
+  background-image: url(img/latestNews-img/latest5.png);
+}
+#latest6 {
+  background-image: url(img/latestNews-img/latest6.jpg);
+}
+#latest7 {
+  background-image: url(img/latestNews-img/latest7.jpeg);
+}
+#latest8 {
+  background-image: url(img/latestNews-img/latest8.jpg);
+}
+
 .deals-header {
   display: inline-flex;
   flex-direction: row;
@@ -339,47 +389,5 @@ footer {
   }
 }
 /* Latest news styles */
-#latest1,
-#latest2,
-#latest3,
-#latest4,
-#latest5,
-#latest6,
-#latest7,
-#latest8 {
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
-}
 
-#latest1 {
-  background-image: url(img/latestNews-img/latest1.png);
-}
-#latest2 {
-  background-image: url(img/latestNews-img/latest2.jpg);
-}
-#latest3 {
-  background-image: url(img/latestNews-img/latest3.png);
-}
-#latest4 {
-  background-image: url(img/latestNews-img/latest4.png);
-}
-#latest5 {
-  background-image: url(img/latestNews-img/latest5.png);
-}
-#latest6 {
-  background-image: url(img/latestNews-img/latest6.jpg);
-}
-#latest7 {
-  background-image: url(img/latestNews-img/latest7.jpeg);
-}
-#latest8 {
-  background-image: url(img/latestNews-img/latest8.jpg);
-}
 /* copied content  */
