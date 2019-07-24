@@ -218,6 +218,7 @@ main {
 .latest h2 {
   grid-column: 1 / -1;
   color: #f42;
+  margin-bottom: 2px;
 }
 .latest h2:hover {
   color: #000;
@@ -338,102 +339,47 @@ footer {
   }
 }
 /* Latest news styles */
-#latest1 {
-  display: block;
-  background-image: url(img/latestNews-img/latest1.png);
+#latest1,
+#latest2,
+#latest3,
+#latest4,
+#latest5,
+#latest6,
+#latest7,
+#latest8 {
   background-color: #000;
   background-size: cover;
   background-position: 50%;
-  /* height: auto; */
-  overflow: hidden;
-  padding-top: 50%;
+  height: 135px;
   width: 100%;
+  display: block;
   margin-bottom: 8px;
   background-repeat: no-repeat;
   opacity: 1;
+}
+
+#latest1 {
+  background-image: url(img/latestNews-img/latest1.png);
 }
 #latest2 {
   background-image: url(img/latestNews-img/latest2.jpg);
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
 }
 #latest3 {
   background-image: url(img/latestNews-img/latest3.png);
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
 }
 #latest4 {
   background-image: url(img/latestNews-img/latest4.png);
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
 }
 #latest5 {
   background-image: url(img/latestNews-img/latest5.png);
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
 }
 #latest6 {
   background-image: url(img/latestNews-img/latest6.jpg);
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
 }
 #latest7 {
   background-image: url(img/latestNews-img/latest7.jpeg);
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
 }
 #latest8 {
   background-image: url(img/latestNews-img/latest8.jpg);
-  background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  height: 135px;
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  background-repeat: no-repeat;
-  opacity: 1;
 }
 /* copied content  */
