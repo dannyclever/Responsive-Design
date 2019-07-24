@@ -224,13 +224,23 @@ main {
 .latest h2:hover {
   color: #000;
 }
-.latest h4 {
-  font-size: 16px;
-  line-height: 20px;
+.latest h4 a {
+  text-decoration: none;
+  color: #000;
+  /* font-size: 16px; */
+  /* line-height: 20px; */
 }
-.story {
+.latest h4 a:hover {
+  text-decoration: underline;
+  color: #f42;
+}
+.cover2by li {
+  display: flex;
+  flex-direction: row;
+}
+/* .story {
   display: block;
-}
+} */
 
 #latest1,
 #latest2,
