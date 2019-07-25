@@ -351,10 +351,30 @@ main {
 .sections section {
   background-color: greenyellow;
 }
+/*Footer Contents*/
 footer {
-  background-color: gray;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  will-change: transform;
+  z-index: 4;
+}
+.footer-social-networks {
+    background: #131313;
+    padding: 2.5em 0;
+    color: #555;
+}
+.footer-icons {
+    margin-bottom: 1.5em;
+}
+ul {
+    list-style-type: none;
 }
 
+.footer-icons li {
+    display: inline-block;
+    margin: 0 8px;
+}
 @media screen and (max-width: 1024px) {
   .cover {
     display: grid;
