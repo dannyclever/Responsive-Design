@@ -360,6 +360,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 180px);
+    grid-gap: 0;
   }
   .cover-header h2,
   .cover2-header h2 {
@@ -379,7 +380,6 @@ footer {
   #cov2,
   #cov3 {
     grid-column: 1/2;
-    /* grid-template-rows: 1fr; */
     background-color: green;
   }
   nav {
@@ -396,11 +396,26 @@ footer {
     border-left: 1px solid #ccc;
     display: inline-block;
   }
-  article .story-img,
   #latest1,
-  #latest3 {
+  #latest2,
+  #latest3,
+  #latest4,
+  #latest5,
+  #latest6,
+  #latest7,
+  #latest8 {
     width: 76px;
     height: 76px;
+  }
+  .story {
+    max-height: 88px;
+    height: 74px;
+  }
+  .story h4,
+  .coverby li {
+    position: relative;
+    left: 95px;
+    top: -100px;
   }
 }
 /* Latest news styles */
