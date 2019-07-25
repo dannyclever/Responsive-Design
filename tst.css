@@ -1,31 +1,63 @@
-body {
-  background-color: white;
-}
-.invest {
+.container,
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: aqua;
-  grid-column-gap: 4px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 0.9em;
+  background-color: white;
 }
-.story {
-  display: block;
+
+.container_row {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
 }
-.story img {
-  position: relative;
-  width: 60px;
-  height: 60px;
+
+.layer1 {
+  height: 50px;
+  text-align: center;
+  background-color: yellow;
+  text-align: center;
+}
+
+.layer2 {
+  height: 80px;
+  background-color: #f42;
+  text-align: center;
+}
+h4 {
+  padding: 0px 0;
+}
+.invest-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 16px;
 }
-.story h4 {
-  position: relative;
-  padding: 12px;
-  text-align: center;
-  top: 0;
-  background-color: #f42;
-  color: white;
+
+.grid img {
+  width: 60px;
+  height: 60px;
 }
-.deets h4 {
-  padding: 24px;
+.story-investmentCard-name {
+  background: #f42;
+  color: #fff;
+  padding: 10.6667px 16px 10.6667px 84px;
+  margin: 0 !important;
+  font-size: 18px !important;
+  font-weight: 700;
+}
+.story-investmentCard-deets {
+  padding: 10.6667px 16px 10.6667px 84px;
   color: #000;
-  background-color: #ffebe7;
+  background: rgba(255, 68, 34, 0.08);
+  margin: 0;
+  /* line-height: 0.5; */
+}
+.story-investmentCard-deets h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 !important;
+  line-height: 1;
 }

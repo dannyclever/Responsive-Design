@@ -295,8 +295,9 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  grid-gap: 0.9rem;
-  background-color: green;
+  /* grid-gap: 0.9rem; */
+  grid-column-gap: 0.9rem;
+  /* background-color: green; */
 }
 .deals header {
   grid-column: 1 / -1;
@@ -307,6 +308,9 @@ main {
 }
 
 .story-investment {
+  display: flex;
+  flex-direction: column;
+  font-family: "Avalon", sans-serif;
   background-color: #aaa;
 }
 
@@ -314,7 +318,7 @@ main {
   padding: 0;
 }
 .invest-header {
-  position: relative;
+  /* position: relative; */
   height: 40px;
   margin: -20px 0;
   padding: 0;
@@ -322,8 +326,6 @@ main {
 }
 .invest-h4 {
   background-color: #f42;
-  font-family: var(--source-sans);
-  font-weight: 700;
   font-size: 18px;
   line-height: 1;
   color: #fff;
@@ -336,13 +338,16 @@ main {
   z-index: 2;
 }
 .invest-desc {
-  font-family: var(--source-sans);
   font-weight: 700;
   line-height: 1;
   padding: 11px 16px;
   padding-left: 84px;
   color: #000;
   background-color: #ffebe7;
+}
+.invest-card {
+  /* position: relative; */
+  top: 100px;
 }
 
 .sections {
@@ -363,35 +368,35 @@ footer {
   z-index: 4;
 }
 .footer-contacts {
-    background: #131313;
-    padding: 2.5em 0;
+  background: #131313;
+  padding: 2.5em 0;
 }
 .footer-contacts li a .icon {
-    font-size: 18px;
-    color: white;
+  font-size: 18px;
+  color: white;
 }
 .footer-menu a {
-    color: white;
+  color: white;
 }
 .footer-icons {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .footer-icons li {
-    display: inline-block;
-    margin: 0 8px;
+  display: inline-block;
+  margin: 0 8px;
 }
 
 .footer-menu li {
-    font-family: Shentox,sans-serif;
-    font-weight: 500;
-    display: inline-block;
-    font-size: 13px;
-    line-height: 24px;
-    margin: 0 6px;
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 6px;
 }
 @media screen and (max-width: 1024px) {
   .cover {
@@ -496,6 +501,42 @@ ul {
     top: -100px;
   }
 }
-/* Latest news styles */
 
-/* copied content  */
+/* testing start */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px;
+  grid-gap: 0.9em;
+  background-color: white;
+}
+
+.container_row {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+.layer1 {
+  height: 50px;
+  text-align: center;
+  background-color: yellow;
+  text-align: center;
+}
+
+.layer2 {
+  height: 80px;
+  background-color: #f42;
+  text-align: center;
+}
+h4 {
+  padding: 0px 0;
+}
+.inv-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 16px;
+}
+
+/* testing end */
