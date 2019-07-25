@@ -363,6 +363,16 @@ footer {
     background: #131313;
     padding: 2.5em 0;
 }
+.footer-icons a {
+    background: #333;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+    width: 40px;
+    box-sizing: border-box;
+}
 .footer-contacts li a .icon {
     font-size: 18px;
     color: white;
@@ -389,6 +399,28 @@ ul {
     font-size: 13px;
     line-height: 24px;
     margin: 0 6px;
+    color: #aaa;
+}
+.footer-menu li a {
+    color: #aaa;
+    text-decoration: none;
+} 
+.footer-menu li a:hover {
+    color: white;
+} 
+.footer-legal {
+    background: #000;
+    color: #aaa;
+    font-size: 13px;
+    padding: 2.5em 0;
+}
+.footer-legal .wrapper {
+    margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+}
+.footer-legal span {
+    display: inline;
 }
 @media screen and (max-width: 1024px) {
   .cover {
