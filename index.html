@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="test.css" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -31,6 +31,7 @@
     <main>
       <section class="cover">
         <article id="cov1">
+          <div class="cover-trigger"></div>
           <div class="cover-gradient"></div>
           <img class="cover-logo" src="img/tnw.svg" alt="" />
           <div class="cover-date">Monday — July 22, 2019</div>
@@ -53,6 +54,7 @@
           </header>
         </article>
         <article id="cov2">
+            <div class="cover-trigger"></div>
         <header class="cover2-header">
           <h5 class="cover2-section">NASA</h5>
             <h2 class="cover2-title">
@@ -70,6 +72,7 @@
         </header>
         </article>
         <article id="cov3">
+            <div class="cover-trigger"></div>
             <header class="cover2-header">
                 <h5 class="cover2-section">NASA</h5>
                   <h2 class="cover2-title">
@@ -87,92 +90,107 @@
               </header>
         </article>
       </section>
+      
       <div class="wrapper">
         <section class="latest">
-          <h2>Latest news ></h2>
-          <article id="latest1">
-            <h4>
-                The best use of body hacking might be in hospitals
-            </h4>
-            <ul class="cover2by">
-                <li>by <a href="#">Andrew Williams</a> </li>
-                <li>
-                  <time>13 minutes ago </time>
-                </li>
+          <h2>Latest news <i class="fas fa-angle-right"></i></h2>
+          
+          <article class="story">
+            <div class="story-content">
+              <div class="story-img" id="latest1"></div>
+              <h4>
+                <a href="#">The best use of body hacking might be in hospitals</a> 
+              </h4>
+              <ul class="coverby">
+                  <li><a href="#">Andrew Williams</a> </li>
+                  <li>
+                    <time>13 minutes ago </time>
+                  </li>
               </ul>
+            </div>
           </article>
-          <article id="latest2">
-                <h4>
-                  Prep to certify your cybersecurity skills with this $49 training bundle
-                </h4>
-                <ul class="cover2by">
-                    <li>by <a href="#">TNW Deals </a> </li>
-                    <li>
-                      <time>21 hours ago </time>
-                    </li>
+          
+          <article class="story" >
+            <div class="story-content">
+              <div class="story-img" id="latest2"></div>
+                  <h4>
+                    <a href="#">Prep to certify your cybersecurity skills with this $49 training bundle</a>
+                  </h4>
+                  <ul class="coverby">
+                      <li><a href="#">TNW Deals </a> </li>
+                      <li>
+                        <time>21 hours ago </time>
+                      </li>
                   </ul>
+              </div>
           </article>
-          <article id="latest3">
+          <article class="story" >
+            <div id="latest3"></div>
               <h4>
-                CHEAP: 29% off Harman/Kardon's Onyx Studio 4 speaker, just for you
+                <a href="#">CHEAP: 29% off Harman/Kardon's Onyx Studio 4 speaker, just for you</a>
               </h4>
-              <ul class="cover2by">
-                  <li>by <a href="#">Andrew Morgan </a> </li>
+              <ul class="coverby">
+                  <li><a href="#">Andrew Morgan </a> </li>
                   <li>
                     <time>7 days ago </time>
                   </li>
                 </ul>
           </article>
-          <article id="latest4">
+          <article class="story" >
+            <div id="latest4"></div>
               <h4>
-                Smart cities are an AI-powered dystopia that's already happening
+                <a href="#">Smart cities are an AI-powered dystopia that's already happening</a>
               </h4>
-              <ul class="cover2by">
-                  <li>by <a href="#">Andrew Morgan </a> </li>
+              <ul class="coverby">
+                  <li><a href="#">Andrew Morgan </a> </li>
                   <li>
                     <time>7 days ago </time>
                   </li>
                 </ul>
           </article>
-          <article id="latest5">
+          <article class="story">
+            <div id="latest5"></div>
               <h4>
-                NASA is paying SpaceX $69M to crash a rocket into an asteroid
+                <a href="#">NASA is paying SpaceX $69M to crash a rocket into an asteroid</a>
               </h4>
-              <ul class="cover2by">
-                  <li>by <a href="#">Andrew Morgan </a> </li>
+              <ul class="coverby">
+                  <li><a href="#">Andrew Morgan </a> </li>
                   <li>
                     <time>7 days ago </time>
                   </li>
                 </ul>
           </article>
-          <article id="latest6">
+          <article class="story">
+            <div id="latest6"></div>
               <h4>
-                AI rejects conservative human views on furniture, designs wacky chair
+                <a href="#">AI rejects conservative human views on furniture, designs wacky chair</a>
               </h4>
-              <ul class="cover2by">
-                  <li>by <a href="#">Andrew Morgan </a> </li>
+              <ul class="coverby">
+                  <li><a href="#">Andrew Morgan </a> </li>
                   <li>
                     <time>7 days ago </time>
                   </li>
                 </ul>
           </article>
-          <article id="latest7">
+          <article class="story" >
+            <div id="latest7"></div>
             <h4>
-              Voice actor lets it slip that Horizon Zero Dawn sequel is in the works
+              <a href="#">Voice actor lets it slip that Horizon Zero Dawn sequel is in the works</a>
           </h4>
-          <ul class="cover2by">
-              <li>by <a href="#">Andrew Morgan </a> </li>
+          <ul class="coverby">
+              <li><a href="#">Andrew Morgan </a> </li>
               <li>
                 <time>7 days ago </time>
               </li>
             </ul>
           </article>
-          <article id="latest8">
+          <article class="story">
+            <div  id="latest8"></div>
             <h4>
-              Highly Recommended: Rockstar Games' immersive worlds are a stoner's delight
+              <a href="#">Highly Recommended: Rockstar Games' immersive worlds are a stoner's delight</a>
           </h4>
-          <ul class="cover2by">
-              <li>by <a href="#">Andrew Morgan </a> </li>
+          <ul class="coverby">
+              <li><a href="#">Andrew Morgan </a> </li>
               <li>
                 <time>7 days ago </time>
               </li>
@@ -187,7 +205,9 @@
           <a href="#">Get updates by email |</a>
           <a href="#">See more</a>
         </header>
-        <article>1</article>
+        <article>
+          1
+       </article>
         <article>2</article>
         <article>3</article>
         <article class="hide">4</article>
