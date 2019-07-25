@@ -359,10 +359,16 @@ footer {
   will-change: transform;
   z-index: 4;
 }
-.footer-social-networks {
+.footer-contacts {
     background: #131313;
     padding: 2.5em 0;
-    color: #555;
+}
+.footer-contacts li a .icon {
+    font-size: 18px;
+    color: white;
+}
+.footer-menu a {
+    color: white;
 }
 .footer-icons {
     margin-bottom: 1.5em;
@@ -374,6 +380,15 @@ ul {
 .footer-icons li {
     display: inline-block;
     margin: 0 8px;
+}
+
+.footer-menu li {
+    font-family: Shentox,sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0 6px;
 }
 @media screen and (max-width: 1024px) {
   .cover {
