@@ -296,7 +296,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 0.9rem;
-  background-color: bisque;
+  background-color: green;
 }
 .deals header {
   grid-column: 1 / -1;
@@ -306,40 +306,43 @@ main {
   background-color: white;
 }
 
-.investiments > div {
-    position: relative;
-    display: block;
+.story-investment {
+  background-color: #aaa;
 }
 
-.deals-header img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /*height: 60px;
-    width: 60px;*/
-    margin: 11px;
-    display: block;
+.vertical {
+  padding: 0;
 }
-
-.item-h4 {
-    background-color: #f42;
-    font-family: var(--source-sans);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1;
-    color: #fff;
-    padding: 11px 16px;
-    padding-left: 84px;
+.invest-header {
+  position: relative;
+  height: 40px;
+  margin: -20px 0;
+  padding: 0;
+  border: 0;
 }
-
-.item-desc {
-    font-family: var(--source-sans);
-    font-weight: 700;
-    line-height: 1;
-    padding: 11px 16px;
-    padding-left: 84px;
-    color: #000;
-    background-color: #FFEBE7;
+.invest-h4 {
+  background-color: #f42;
+  font-family: var(--source-sans);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  padding: 11px 16px;
+  padding-left: 84px;
+}
+.invest-img {
+  position: absolute;
+  margin: 10.666667px;
+  z-index: 2;
+}
+.invest-desc {
+  font-family: var(--source-sans);
+  font-weight: 700;
+  line-height: 1;
+  padding: 11px 16px;
+  padding-left: 84px;
+  color: #000;
+  background-color: #ffebe7;
 }
 
 .sections {
@@ -460,6 +463,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    box-shadow: 0 1px rgba(210, 210, 210, 0.2);
+  }
   .cover {
     display: grid;
     grid-template-columns: 1fr;

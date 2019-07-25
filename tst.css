@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+}
+.invest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: aqua;
+  grid-column-gap: 4px;
+}
+.story {
+  display: block;
+}
+.story img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 16px;
+}
+.story h4 {
+  position: relative;
+  padding: 12px;
+  text-align: center;
+  top: 0;
+  background-color: #f42;
+  color: white;
+}
+.deets h4 {
+  padding: 24px;
+  color: #000;
+  background-color: #ffebe7;
+}
