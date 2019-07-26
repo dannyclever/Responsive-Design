@@ -372,14 +372,14 @@ footer {
   padding: 2.5em 0;
 }
 .footer-icons a {
-    background: #333;
-    border-radius: 50%;
-    display: block;
-    height: 40px;
-    padding: 12px;
-    text-align: center;
-    width: 40px;
-    box-sizing: border-box;
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+  box-sizing: border-box;
 }
 .footer-contacts li a .icon {
   font-size: 18px;
@@ -401,43 +401,34 @@ ul {
 }
 
 .footer-menu li {
-<<<<<<< HEAD
   font-family: Shentox, sans-serif;
   font-weight: 500;
   display: inline-block;
   font-size: 13px;
   line-height: 24px;
   margin: 0 6px;
-=======
-    font-family: Shentox,sans-serif;
-    font-weight: 500;
-    display: inline-block;
-    font-size: 13px;
-    line-height: 24px;
-    margin: 0 6px;
-    color: #aaa;
+  color: #aaa;
 }
 .footer-menu li a {
-    color: #aaa;
-    text-decoration: none;
-} 
+  color: #aaa;
+  text-decoration: none;
+}
 .footer-menu li a:hover {
-    color: white;
-} 
+  color: white;
+}
 .footer-legal {
-    background: #000;
-    color: #aaa;
-    font-size: 13px;
-    padding: 2.5em 0;
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  padding: 2.5em 0;
 }
 .footer-legal .wrapper {
-    margin: 0 auto;
-    max-width: 1192px;
-    padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
 }
 .footer-legal span {
-    display: inline;
->>>>>>> aa7a8e0527bb9b5a300eb9a8931e6096f25f13fd
+  display: inline;
 }
 @media screen and (max-width: 1024px) {
   .cover {
