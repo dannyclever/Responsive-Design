@@ -1,31 +1,238 @@
-body {
-  background-color: white;
+.distraction-title,
+.post-body a strong,
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
-.invest {
+
+.container,
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: aqua;
-  grid-column-gap: 4px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 0.9em;
+  background-color: white;
+  box-sizing: border-box;
 }
-.story {
-  display: block;
+
+.container_row {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
 }
-.story img {
+
+.layer1 {
+  height: 50px;
+  text-align: center;
+  background-color: yellow;
+  text-align: center;
+}
+
+.layer2 {
+  height: 80px;
+  background-color: #f42;
+  text-align: center;
+}
+h4 {
+  padding: 0px 0;
+}
+h5 {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+.invest-img {
   position: relative;
-  width: 60px;
-  height: 60px;
+  top: -10px;
+  left: -90px;
   margin: 16px;
 }
-.story h4 {
-  position: relative;
-  padding: 12px;
-  text-align: center;
-  top: 0;
-  background-color: #f42;
-  color: white;
+
+.grid img {
+  width: 60px;
+  height: 60px;
 }
-.deets h4 {
-  padding: 24px;
+
+/* display: flex;
+  flex-direction: column;
+  justify-items: flex-start; */
+/* background-color: #543; */
+
+.vertical--lighter:before {
+  background: rgba(255, 68, 34, 0.03);
+  z-index: -999;
+}
+.story-investmentCard-header {
+  position: relative;
+  display: block;
+}
+
+.story-investmentCard-company-image {
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  margin: 10.6666666667px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.story-investmentCard-name {
+  position: relative;
+  top: -86px;
+  background: #f42;
+  color: #fff;
+  padding: 10.6667px 16px 10.6667px 84px;
+  margin: 0 !important;
+  font-size: 18px !important;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.story-investmentCard-deets {
+  position: relative;
+  top: -86px;
+  padding: 10.6667px 16px 10.6667px 84px;
   color: #000;
-  background-color: #ffebe7;
+  background: rgba(255, 68, 34, 0.08);
+  margin: 0;
+  line-height: 0.5;
+}
+.story-investmentCard-deets h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 !important;
+  line-height: 1;
+}
+.story-investmentCard-deets h5 {
+  color: #000;
+  font-size: 12px;
+}
+.story-investment-card {
+  padding: 16px;
+}
+.story-investmentCard-bit {
+  padding-left: 2em;
+  position: relative;
+  font-size: 13px;
+  color: #555;
+  margin-right: 1em;
+  display: block;
+  line-height: 22px;
+}
+.story--investment .story-byline {
+  margin-top: 0;
+}
+.vertical .story-byline {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.story-byline li {
+  display: block;
+  float: left;
+}
+.story-byline:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.vertical .story-title-link {
+  font-size: 12px;
+  font-weight: 400;
+  color: #aaa;
+}
+a {
+  text-decoration: none;
 }
