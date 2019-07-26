@@ -34,7 +34,13 @@ header,
 article {
   display: block;
 }
-
+h5 {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
 #logo {
   width: 107px;
   height: 50px;
@@ -207,7 +213,8 @@ main {
   right: 2%;
 }
 /* Latest News */
-.wrapper {
+.wrapper,
+.deals {
   margin: 0 16px;
 }
 .latest {
@@ -294,7 +301,7 @@ main {
 .deals {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: 90px 270px;
   /* grid-gap: 0.9rem; */
   grid-column-gap: 0.9rem;
   /* background-color: green; */
@@ -311,11 +318,13 @@ main {
   display: flex;
   flex-direction: column;
   font-family: "Avalon", sans-serif;
-  background-color: #aaa;
+  background-color: #fffaf8;
+  height: 92%;
 }
 
-.vertical {
-  padding: 0;
+.vertical a {
+  text-decoration: none;
+  color: #888;
 }
 .invest-header {
   /* position: relative; */
@@ -325,6 +334,8 @@ main {
   border: 0;
 }
 .invest-h4 {
+  position: relative;
+  top: -26px;
   background-color: #f42;
   font-size: 18px;
   line-height: 1;
@@ -338,17 +349,59 @@ main {
   z-index: 2;
 }
 .invest-desc {
+  position: relative;
+  top: -50px;
+  /* height: 60px;
+  max-height: 60px; */
   font-weight: 700;
   line-height: 1;
-  padding: 11px 16px;
-  padding-left: 84px;
+  padding: 8px 0 0 84px;
+  /* padding-left: 84px; */
   color: #000;
   background-color: #ffebe7;
 }
-.invest-card {
-  /* position: relative; */
-  top: 100px;
+.invest-desc h4 {
+  font-size: 18px;
+  color: #000;
+  margin: 0 !important;
+  line-height: 1;
 }
+.invest-desc h5 {
+  position: relative;
+  top: -20px;
+  color: #000;
+  opacity: 0.5;
+  font-size: 11px;
+}
+.invest-card {
+  position: relative;
+  top: 78px;
+  padding: 12px 0 0 16px;
+  /* background-color: #fffaf8; */
+  font-size: 13px;
+  color: #555;
+}
+.invest-card img {
+  width: 18px;
+  padding-right: 8px;
+  padding-top: 6px;
+  height: auto;
+}
+.f-item span {
+  position: relative;
+  top: -4px;
+}
+.investor {
+  padding-bottom: 10px;
+}
+.story-by {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  line-height: 20px;
+}
+.story-by span {
+  color: #aaa;
+}
+/* end of fund investments */
 
 .sections {
   display: grid;
