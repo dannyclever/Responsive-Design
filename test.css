@@ -428,6 +428,25 @@ main {
 .sections section {
   background-color: greenyellow;
 }
+/*Latest deals Contents*/
+
+#deals1 {
+  background-image: url(img/latest-deals/sale_20369_primary_image.jpg);
+}
+.story-image {
+  background-position: 0 100%;
+  padding-top: 74.5%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 8px;
+  position: relative;
+  opacity: 1;
+}
 /*Footer Contents*/
 footer {
   background-color: black;
