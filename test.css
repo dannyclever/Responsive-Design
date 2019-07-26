@@ -417,6 +417,12 @@ ul {
     font-size: 13px;
     padding: 3em 0;
 }
+.legal-logoTNW, .legal-logoStackPath {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
 .footer-legal .wrapper {
     margin: 0 auto;
     max-width: 1192px;
@@ -424,6 +430,9 @@ ul {
 }
 .footer-legal span {
     display: inline;
+}
+.footer-legal span b {
+  color: #f42;
 }
 @media screen and (max-width: 1024px) {
   .cover {
