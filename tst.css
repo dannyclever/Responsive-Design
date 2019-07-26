@@ -139,11 +139,11 @@ h5 {
   height: 60px;
 }
 
-  /* display: flex;
+/* display: flex;
   flex-direction: column;
   justify-items: flex-start; */
-  /* background-color: #543; */
-}
+/* background-color: #543; */
+
 .vertical--lighter:before {
   background: rgba(255, 68, 34, 0.03);
   z-index: -999;
