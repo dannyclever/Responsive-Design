@@ -649,6 +649,12 @@ ul {
     left: 95px;
     top: -100px;
   }
+  .footer-icons li {
+    margin: 0 1px;
+  }
+  .footer-legal span {
+    display: block;
+  }
 }
 
 /* testing start */
