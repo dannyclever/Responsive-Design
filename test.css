@@ -319,7 +319,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 90px 270px;
   /* grid-gap: 0.9rem; */
-  grid-column-gap: 0.9rem;
+  grid-gap: 0.9rem;
 }
 .deals header {
   grid-column: 1 / -1;
@@ -342,7 +342,6 @@ main {
   color: #888;
 }
 .invest-header {
-  /* position: relative; */
   height: 40px;
   margin: -20px 0;
   padding: 0;
@@ -371,7 +370,6 @@ main {
   font-weight: 700;
   line-height: 1;
   padding: 8px 0 0 84px;
-  /* padding-left: 84px; */
   color: #000;
   background-color: #ffebe7;
 }
@@ -449,26 +447,21 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.story-deal {
+/* .story-deal {
   min-height: 72px;
   padding-left: 88px;
   position: relative;
-}
+} */
 .story-image {
-  left: 0;
-  padding-top: 75px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: auto;
   background-color: #000;
-  background-position: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
+  height: 196px;
+  width: 100%;
   display: block;
-
-  overflow: hidden;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 .story-image-1 {
   background-image: url(img/latest-deals/sale_20369_primary_image.jpg);
@@ -754,13 +747,6 @@ ul {
 /* testing start */
 
 /* 
-
-.layer1 {
-  height: 50px;
-  text-align: center;
-  background-color: yellow;
-  text-align: center;
-}
 
 .layer2 {
   height: 80px;
