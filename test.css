@@ -591,11 +591,15 @@ ul {
     grid-row: 1/2;
   }
   .latest,
-  .sections,
-  .deals {
+  .sections {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: repeat(3, auto); */
+  }
+  .deals {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px repeat(3, 240px);
   }
   #cov1,
   #cov2,
