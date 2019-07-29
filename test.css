@@ -755,19 +755,8 @@ ul {
 }
 
 /* testing start */
-/* .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 200px;
-  grid-gap: 0.9em;
-  background-color: white;
-}
 
-.container_row {
-  display: flex;
-  flex-direction: column;
-  background-color: bisque;
-}
+/* 
 
 .layer1 {
   height: 50px;
@@ -789,6 +778,6 @@ h4 {
   top: 0;
   left: 0;
   margin: 16px;
-} */
+}  */
 
 /* testing end */
