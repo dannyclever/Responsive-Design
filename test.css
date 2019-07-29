@@ -320,7 +320,6 @@ main {
   grid-template-rows: 90px 270px;
   /* grid-gap: 0.9rem; */
   grid-column-gap: 0.9rem;
-  /* background-color: green; */
 }
 .deals header {
   grid-column: 1 / -1;
@@ -537,6 +536,15 @@ ul {
   .latest,
   .deals {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .deals {
+    grid-template-rows: 110px 270px;
+  }
+  .deals-header {
+    display: block;
+  }
+  .deals-header h2 {
+    padding-bottom: 6px;
   }
   .hide,
   .cover-logo,
