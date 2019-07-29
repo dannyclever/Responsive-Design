@@ -599,7 +599,13 @@ ul {
   .deals {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 110px repeat(3, 240px);
+    grid-template-rows: 160px repeat(3, 240px);
+    grid-row-gap: 18px;
+  }
+  .deals-header-more a {
+    display: block;
+    font-size: 0.9em;
+    line-height: 1.8em;
   }
   #cov1,
   #cov2,
@@ -611,7 +617,8 @@ ul {
     display: flex;
     justify-content: flex-end;
   }
-  nav li {
+  nav li,
+  .hide2 {
     display: none;
   }
   #burger {
