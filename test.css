@@ -471,6 +471,10 @@ h2.headline {
   grid-template-rows: auto;
   grid-template-areas: "1fr 1fr 1fr 1fr";
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .deals-list {
   display: grid;
   grid-auto-rows: auto;
@@ -483,6 +487,7 @@ h2.headline {
 ul {
   list-style-type: none;
 }
+
 .deals-list-item {
   width: initial;
 }
@@ -542,6 +547,7 @@ ul {
   right: 0;
   top: 0;
   color: #000;
+  background-image: url(img/latest-deals/deals-ribbon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
