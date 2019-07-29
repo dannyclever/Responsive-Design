@@ -461,29 +461,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* .deals-list {
-  display: grid;
-  grid-auto-rows: auto;
-}
-.deals-list {
-  flex: 0 1 auto;
-  flex-flow: row wrap;
-  margin: -8px;
-}
-ul {
-  list-style-type: none;
-}
 
-.deals-list-item {
-  width: initial;
-}
-.deals-list-item {
-  flex-basis: 100%;
-  max-width: 100%;
-  width: 100%;
-  padding: 8px;
-  position: relative;
-} */
 .story-deal {
   min-height: 72px;
   padding-left: 88px;
@@ -715,7 +693,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 180px);
-    grid-gap: 0;
+    grid-row-gap: 9px;
   }
   .cover-header h2,
   .cover2-header h2 {
@@ -729,7 +707,6 @@ ul {
   .deals {
     display: grid;
     grid-template-columns: 1fr;
-<<<<<<< HEAD
     grid-template-rows: 160px repeat(3, 240px);
     grid-row-gap: 18px;
   }
@@ -737,9 +714,6 @@ ul {
     display: block;
     font-size: 0.9em;
     line-height: 1.8em;
-=======
-    /* grid-template-rows: repeat(3, auto); */
->>>>>>> parent of d963003... Finished latest funding
   }
   #cov1,
   #cov2,
@@ -777,8 +751,7 @@ ul {
     max-height: 88px;
     height: 74px;
   }
-  .story h4,
-  .coverby li {
+  .story h4 {
     position: relative;
     left: 95px;
     top: -100px;
