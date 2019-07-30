@@ -464,6 +464,15 @@ main {
 #pop5 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design80-368x276.png);
 }
+#pop6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/India-EU-flag-368x276.jpg);
+}
+#pop7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/google-project-zero-iphone-ios-interactionsless-vulenrability-368x276.jpg);
+}
+#pop8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/National-Video-Game-Day-368x276.jpg);
+}
 .section-latest-section {
   font-size: 13px;
   line-height: 1px;
@@ -511,7 +520,7 @@ h3 {
   padding-right: 5px;
   position: relative;
   top: -30px;
-  left: -38px;
+  left: 0;
 }
 .applatest {
   display: flex;
@@ -584,7 +593,15 @@ h3 {
 #appimg5 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Computer-Code.jpg);
 }
-
+#appimg6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/ransomware-bitcoin-cryptocurrency-blockchain-ryuk-.jpg);
+}
+#appimg7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/firefox-stop-cryptojacking-bitcoin-mining-cryptocurrency-monero-blockchain-mozilla.jpg);
+}
+#appimg8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Museum-Wall-Mural.jpg);
+}
 /* Apps end */
 
 /*Latest deals Contents*/
