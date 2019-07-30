@@ -423,18 +423,46 @@ main {
   grid-template-rows: auto;
   grid-gap: 0.9rem;
   margin: 0 30px;
+  /* max-width: 1240px; */
 }
-
-#pop1 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg);
+.apps h2 {
+  color: #f42;
+}
+.apps h2:hover {
+  color: #000;
+}
+.popular {
+  margin: 0 0 2px 0;
+}
+#pop1,
+#pop2,
+#pop3,
+#pop4,
+#pop5,
+#pop6,
+#pop7,
+#pop8 {
   background-size: cover;
-  background-position: 50%;
   height: 250px;
   width: 100%;
   display: block;
-  /* margin-bottom: 8px; */
   background-repeat: no-repeat;
   opacity: 1;
+}
+#pop1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg);
+}
+#pop2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/cheap-header-image-dyson-v11-368x276.png);
+}
+#pop3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design-4-2-368x276.png);
+}
+#pop4 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200-368x276.png);
+}
+#pop5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design80-368x276.png);
 }
 .section-latest-section {
   font-size: 13px;
@@ -493,6 +521,9 @@ h3 {
   padding: 0 0 0 8px;
   height: 96px;
 }
+.appcontent ul {
+  padding: 0;
+}
 .section-headline-title {
   color: #aaa;
   font-size: 13px;
@@ -521,8 +552,14 @@ h3 {
 .section-headline-title a:hover {
   color: #222;
 }
-#appimg1 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/mac-windows-os-vj-dj-music.png);
+#appimg1,
+#appimg2,
+#appimg3,
+#appimg4,
+#appimg5,
+#appimg6,
+#appimg7,
+#appimg8 {
   background-size: cover;
   background-position: 50%;
   height: 96px;
@@ -532,6 +569,22 @@ h3 {
   background-repeat: no-repeat;
   margin-left: auto;
 }
+#appimg1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/mac-windows-os-vj-dj-music.png);
+}
+#appimg2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/hemingway-review-UE-Wonderboom-2.png);
+}
+#appimg3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/header-image-video-instagram-delete.png);
+}
+#appimg4 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/carltondance.jpg);
+}
+#appimg5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Computer-Code.jpg);
+}
+
 /* Apps end */
 
 /*Latest deals Contents*/
@@ -765,9 +818,9 @@ ul {
   .sections {
     grid-template-columns: repeat(2, 1fr);
   }
-  .sections section {
+  /* .sections section {
     background-color: green;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -850,22 +903,5 @@ ul {
 }
 
 /* testing start */
-
-/* 
-
-.layer2 {
-  height: 80px;
-  background-color: #f42;
-  text-align: center;
-}
-h4 {
-  padding: 0px 0;
-}
-.inv-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 16px;
-}  */
 
 /* testing end */
