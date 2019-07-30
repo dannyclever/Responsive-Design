@@ -416,6 +416,7 @@ main {
 }
 /* end of fund investments */
 
+/* Apps start */
 .sections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -424,7 +425,6 @@ main {
   margin: 0 30px;
 }
 
-/* Apps start */
 #pop1 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg);
   background-size: cover;
@@ -432,7 +432,7 @@ main {
   height: 250px;
   width: 100%;
   display: block;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   background-repeat: no-repeat;
   opacity: 1;
 }
@@ -460,6 +460,10 @@ main {
 }
 .section-popular-section {
   font-size: 13px;
+}
+.section-popular-title a:hover,
+.section-latest-title a:hover {
+  text-decoration: underline;
 }
 h3 {
   position: relative;
@@ -514,6 +518,9 @@ h3 {
   top: 13px;
   width: 4px;
 }
+.section-headline-title a:hover {
+  color: #222;
+}
 #appimg1 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/mac-windows-os-vj-dj-music.png);
   background-size: cover;
@@ -549,11 +556,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* .story-deal {
-  min-height: 72px;
-  padding-left: 88px;
-  position: relative;
-} */
+
 .story-image {
   background-color: #000;
   background-size: cover;
