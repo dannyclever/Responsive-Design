@@ -421,6 +421,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 0.9rem;
+  margin: 0 30px;
 }
 
 /* Apps start */
@@ -434,6 +435,18 @@ main {
   margin-bottom: 8px;
   background-repeat: no-repeat;
   opacity: 1;
+}
+.section-latest-section {
+  font-size: 13px;
+  line-height: 1px;
+}
+.section-latest-title {
+  font-size: 14px;
+}
+.section-latest-header {
+  position: relative;
+  top: -10px;
+  width: 66%;
 }
 .section-popular-header {
   color: #fff;
@@ -469,16 +482,19 @@ h3 {
   left: -38px;
 }
 .applatest {
+  display: flex;
+  flex-direction: row-reverse;
   background-color: #ffebe7;
   color: #f42;
-  padding: 16px;
-  /* height: 80px; */
+  padding: 0 0 0 8px;
+  height: 96px;
 }
 .section-headline-title {
   color: #aaa;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1;
+  /* padding-bottom: 5px; */
   border-bottom: 1px solid #eee;
 }
 .section-headline-title a {
@@ -498,7 +514,17 @@ h3 {
   top: 13px;
   width: 4px;
 }
-
+#appimg1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/mac-windows-os-vj-dj-music.png);
+  background-size: cover;
+  background-position: 50%;
+  height: 96px;
+  width: 96px;
+  display: block;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
 /* Apps end */
 
 /*Latest deals Contents*/
