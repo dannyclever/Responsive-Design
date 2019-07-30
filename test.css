@@ -422,9 +422,7 @@ main {
   grid-template-rows: auto;
   grid-gap: 0.9rem;
 }
-/* .sections section {
-  background-color: greenyellow;
-} */
+
 /* Apps start */
 #pop1 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg);
@@ -439,7 +437,7 @@ main {
 }
 .section-popular-header {
   color: #fff;
-  top: 86px;
+  top: 96px;
   bottom: 0;
   left: 0;
   padding: 14px;
@@ -469,6 +467,19 @@ h3 {
   position: relative;
   top: -30px;
   left: -38px;
+}
+.applatest {
+  background-color: #ffebe7;
+  color: #f42;
+  padding: 16px;
+  /* height: 80px; */
+}
+.section-headline-title {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  border-bottom: 1px solid #eee;
 }
 
 /* Apps end */
