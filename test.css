@@ -481,6 +481,23 @@ h3 {
   line-height: 1.5;
   border-bottom: 1px solid #eee;
 }
+.section-headline-title a {
+  color: #555;
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+}
+.section-headline-title a::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
+}
 
 /* Apps end */
 
