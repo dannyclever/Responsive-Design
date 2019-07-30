@@ -422,9 +422,57 @@ main {
   grid-template-rows: auto;
   grid-gap: 0.9rem;
 }
-.sections section {
+/* .sections section {
   background-color: greenyellow;
+} */
+/* Apps start */
+#pop1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 250px;
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
+.section-popular-header {
+  color: #fff;
+  top: 86px;
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  position: relative;
+  right: 0;
+  z-index: 3;
+}
+.section-popular-section {
+  font-size: 13px;
+}
+h3 {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+}
+.section-popular-byline {
+  /* display: block; */
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.section-popular-byline li {
+  display: block;
+  float: left;
+  padding-right: 5px;
+  position: relative;
+  top: -30px;
+  left: -38px;
+}
+
+/* Apps end */
+
 /*Latest deals Contents*/
 
 h2 .headline {
