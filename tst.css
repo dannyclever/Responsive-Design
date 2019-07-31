@@ -1,19 +1,938 @@
+* {
+  /* box-sizing: border-box; */
+  font-family: Shentox, sans-serif;
+}
+body {
+  margin: 0;
+}
+nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 50px;
+  font-family: Shentox, sans-serif;
+  font-size: 14px;
+}
+nav li {
+  display: inline-flex;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  padding: 6px 20px 0 0;
+}
+nav a:hover {
+  color: #555;
+}
+header,
+article {
+  display: block;
+}
+h5 {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+#logo {
+  width: 107px;
+  height: 50px;
+}
+#search-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  padding: 16px;
+  border-left: 1px solid #ccc;
+}
+#burger {
+  display: none;
+}
+main {
+  margin: 50px 0;
+}
+.cover {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 220px);
+  grid-gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  background-image: linear-gradient(#eee, #fff);
+}
+.cover a {
+  text-decoration: none;
+  color: #fff;
+}
+#cov1 {
+  grid-column: 1/3;
+  grid-row: 1 / 3;
+  background-image: url("img/cov1.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  mix-blend-mode: darken;
+  color: white;
+}
+#cov2 {
+  background-image: url("img/cov2.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  mix-blend-mode: darken;
+  color: white;
+}
+#cov3 {
+  background-image: url("img/cov3.png");
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  mix-blend-mode: darken;
+  color: white;
+}
+.cover-trigger {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25)
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
+    no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  will-change: background-color;
+  z-index: 4;
+}
+.cover-gradient {
+  background: transparent url("img/cover-gradient.png") no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 6;
+  mix-blend-mode: lighten;
+  transition: 0.4s ease;
+}
+.cover-logo {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  z-index: 7;
+  max-width: 50%;
+  height: 100%;
+  max-height: 112px;
+}
+.cover-date {
+  color: white;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 8;
+}
+.cover-header,
+.cover2-header {
+  position: absolute;
+  bottom: -10px;
+  left: 4px;
+  right: 4px;
+  z-index: 7;
+  padding: 5px;
+}
+.cover-header h5 {
+  position: relative;
+  left: 2%;
+  top: 30px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.cover-header h2 {
+  position: relative;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1;
+  padding-right: 5px;
+  left: 2%;
+  right: 2%;
+}
+.coverby {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: #fff9;
+  bottom: 0.3em;
+  left: -20px;
+  font-size: 12px;
+  list-style-type: none;
+}
+.coverby li {
+  padding: 0 10px 0 0;
+}
+.coverby a {
+  color: #fff9;
+}
+.coverby a:hover {
+  color: #fff;
+}
+/* end of #cov1 */
+.cover2-header h5 {
+  position: relative;
+  left: 2%;
+  top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.cover2-header h2 {
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1;
+  padding-right: 5px;
+  left: 2%;
+  right: 2%;
+}
+/* Latest News */
+.wrapper,
+.deals {
+  margin: 0 30px;
+}
+.latest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 0.9rem;
+}
+.deals-header {
+  display: flex;
+  flex-direction: row;
+}
+.deals-header :nth-child(1) {
+  margin-right: auto;
+}
+.deals-header a {
+  text-decoration: none;
+  color: #f42;
+}
+.deals-header a:hover {
+  color: #000;
+}
+.latest h2,
+.deals-header h2 {
+  grid-column: 1 / -1;
+  color: #f42;
+  margin-bottom: 2px;
+}
+.latest h2:hover,
+.deals-header h2:hover {
+  color: #000;
+}
+.latest h4 a {
+  text-decoration: none;
+  color: #000;
+}
+.latest h4 a:hover {
+  text-decoration: underline;
+  color: #f42;
+}
+.latest .coverby,
+.latest .coverby a {
+  color: #aaa;
+  text-decoration: none;
+  left: -40px;
+}
+.latest .coverby a:hover {
+  color: #222;
+}
+
+#latest1,
+#latest2,
+#latest3,
+#latest4,
+#latest5,
+#latest6,
+#latest7,
+#latest8 {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  height: 140px;
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+#latest1 {
+  background-image: url(img/latestNews-img/latest1.png);
+}
+#latest2 {
+  background-image: url(img/latestNews-img/latest2.jpg);
+}
+#latest3 {
+  background-image: url(img/latestNews-img/latest3.png);
+}
+#latest4 {
+  background-image: url(img/latestNews-img/latest4.png);
+}
+#latest5 {
+  background-image: url(img/latestNews-img/latest5.png);
+}
+#latest6 {
+  background-image: url(img/latestNews-img/latest6.jpg);
+}
+#latest7 {
+  background-image: url(img/latestNews-img/latest7.jpeg);
+}
+#latest8 {
+  background-image: url(img/latestNews-img/latest8.jpg);
+}
+
+.deals-header {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 .deals {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 90px 270px;
   /* grid-gap: 0.9rem; */
-  grid-column-gap: 0.9rem;
+  grid-gap: 0.9rem;
 }
-.deals-header {
-  grid-column: 1/-1;
+.deals header {
+  grid-column: 1 / -1;
+  background-color: white;
+}
+.deals article {
+  background-color: white;
+}
+
+.story-investment {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  font-family: "Avalon", sans-serif;
+  background-color: #fffaf8;
+  height: 92%;
+}
+
+.vertical a {
+  text-decoration: none;
+  color: #888;
+}
+.invest-header {
+  height: 40px;
+  margin: -20px 0;
+  padding: 0;
+  border: 0;
+}
+.invest-h4 {
+  position: relative;
+  top: -26px;
+  background-color: #f42;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  padding: 11px 16px;
+  padding-left: 84px;
+}
+.invest-img {
+  position: absolute;
+  margin: 10.666667px;
+  z-index: 2;
+}
+.invest-desc {
+  position: relative;
+  top: -50px;
+  /* height: 60px;
+  max-height: 60px; */
+  font-weight: 700;
+  line-height: 1;
+  padding: 8px 0 0 84px;
+  color: #000;
+  background-color: #ffebe7;
+}
+.invest-desc h4 {
+  font-size: 18px;
+  color: #000;
+  margin: 0 !important;
+  line-height: 1;
+}
+.invest-desc h5 {
+  position: relative;
+  top: -20px;
+  color: #000;
+  opacity: 0.5;
+  font-size: 11px;
+}
+.invest-card {
+  position: relative;
+  top: 78px;
+  padding: 12px 0 0 16px;
+  /* background-color: #fffaf8; */
+  font-size: 13px;
+  color: #555;
+}
+.invest-card img {
+  width: 18px;
+  padding-right: 8px;
+  padding-top: 6px;
+  height: auto;
+}
+.f-item span {
+  position: relative;
+  top: -4px;
+}
+.investor {
+  padding-bottom: 10px;
+}
+.story-by {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  line-height: 20px;
+}
+.story-by span {
+  color: #aaa;
+}
+/* end of fund investments */
+
+/* Apps start */
+.sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0.9rem;
+  margin: 0 30px;
+  /* max-width: 1240px; */
+}
+.apps h2 {
+  color: #f42;
+}
+.apps h2:hover {
+  color: #000;
+}
+.gradient {
+  bottom: 0;
+  left: 0;
+  position: relative;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25) url(img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
   display: block;
+  z-index: 4;
+}
+.popular {
+  margin: 0 0 2px 0;
+}
+#pop1,
+#pop2,
+#pop3,
+#pop4,
+#pop5,
+#pop6,
+#pop7,
+#pop8 {
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  /* width: 100%; */
+  display: block;
+  opacity: 1;
+}
+#pop1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg);
+}
+#pop2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/cheap-header-image-dyson-v11-368x276.png);
+}
+#pop3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design-4-2-368x276.png);
+}
+#pop4 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200-368x276.png);
+}
+#pop5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design80-368x276.png);
+}
+#pop6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/India-EU-flag-368x276.jpg);
+}
+#pop7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/google-project-zero-iphone-ios-interactionsless-vulenrability-368x276.jpg);
+}
+#pop8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/National-Video-Game-Day-368x276.jpg);
+}
+.section-latest-section {
+  font-size: 13px;
+  line-height: 1px;
+}
+.section-latest-title {
+  font-size: 14px;
+}
+.section-latest-header {
+  position: relative;
+  top: -10px;
+  width: 66%;
+}
+.section-popular-header {
+  color: #fff;
+  top: -160px;
+  padding: 14px;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  right: 0;
+  z-index: 30;
+}
+.section-popular-section {
+  font-size: 13px;
+}
+.section-popular-title a:hover,
+.section-latest-title a:hover {
+  text-decoration: underline;
+}
+h3 {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+}
+.section-popular-byline {
+  /* display: block; */
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.section-popular-byline li {
+  display: block;
+  float: left;
+  padding-right: 5px;
+  position: relative;
+  top: -30px;
+  left: 0;
+}
+.applatest {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ffebe7;
+  color: #f42;
+  padding: 0 0 0 8px;
+  height: 96px;
+}
+.appcontent ul {
+  padding: 0;
+}
+.section-headline-title {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  /* padding-bottom: 5px; */
+  border-bottom: 1px solid #eee;
+}
+.section-headline-title a {
+  color: #555;
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+}
+.section-headline-title a::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
+}
+.section-headline-title a:hover {
+  color: #222;
+}
+#appimg1,
+#appimg2,
+#appimg3,
+#appimg4,
+#appimg5,
+#appimg6,
+#appimg7,
+#appimg8 {
+  background-size: cover;
+  background-position: 50%;
+  height: 96px;
+  width: 96px;
+  display: block;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+#appimg1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/mac-windows-os-vj-dj-music.png);
+}
+#appimg2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/hemingway-review-UE-Wonderboom-2.png);
+}
+#appimg3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/header-image-video-instagram-delete.png);
+}
+#appimg4 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/carltondance.jpg);
+}
+#appimg5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Computer-Code.jpg);
+}
+#appimg6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/ransomware-bitcoin-cryptocurrency-blockchain-ryuk-.jpg);
+}
+#appimg7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/firefox-stop-cryptojacking-bitcoin-mining-cryptocurrency-monero-blockchain-mozilla.jpg);
+}
+#appimg8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Museum-Wall-Mural.jpg);
+}
+/* Apps end */
+
+/*Latest deals Contents*/
+
+h2 .headline {
+  margin-bottom: 14px;
+  margin-top: 14px;
+  padding: 4px;
+  color: #f42;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+}
+.deals-header-more {
+  color: #f42;
+  float: right;
+  line-height: 18px;
+  margin-top: 14px;
+  padding: 4px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.story-image {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  height: 196px;
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.story-image-1 {
+  background-image: url(img/latest-deals/sale_20369_primary_image.jpg);
+}
+.story-image-2 {
+  background-image: url(img/latest-deals/sale_20322_primary_image.jpg);
+}
+.story-image-3 {
+  background-image: url(img/latest-deals/sale_20236_primary_image.jpg);
+}
+.story-image-4 {
+  background-image: url(img/latest-deals/sale_20163_primary_image.jpg);
+}
+.story-image-5 {
+  background-image: url(img/latest-deals/sale_20158_primary_image.jpg);
+}
+.story-image-6 {
+  background-image: url(img/latest-deals/sale_20142_primary_image.jpg);
+}
+.story-image-7 {
+  background-image: url(img/latest-deals/sale_19675_primary_image.jpg);
+}
+.story-image-8 {
+  background-image: url(img/latest-deals/product_26273_product_shots1_image.jpg);
+}
+.story-deal-discount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #000;
+  background-image: url(img/latest-deals/deals-ribbon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 80px;
+  overflow: hidden;
+  width: 80px;
+  z-index: 10;
+}
+.story-deal-discount div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+.story-title {
+  font-size: 14px !important;
+  font-weight: 700;
+  line-height: 18px !important;
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.story-deal-price {
+  overflow: hidden;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 18px;
+  padding-top: 4px;
+  vertical-align: baseline;
+}
+.old-price {
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+.new-price {
+  color: #555;
+  font-size: 14px;
+}
+
+/*Footer Contents*/
+footer {
+  background-color: black;
+  text-align: center;
+  position: relative;
+  will-change: transform;
+  z-index: 4;
+}
+.footer-contacts {
+  background: #131313;
+  padding: 2.5em 0;
+}
+.footer-icons a {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+  box-sizing: border-box;
+}
+.footer-contacts li a .icon {
+  font-size: 18px;
+  color: white;
+}
+.footer-menu a {
+  color: white;
+}
+.footer-icons {
+  margin-bottom: 1.5em;
+}
+ul {
+  list-style-type: none;
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.footer-menu li {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 6px;
+  color: #aaa;
+}
+.footer-menu li a {
+  color: #aaa;
+  text-decoration: none;
+}
+.footer-menu li a:hover {
+  color: white;
+}
+.footer-legal {
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  padding: 3em 0;
+}
+.legal-logoTNW,
+.legal-logoStackPath {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+.footer-legal .wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+}
+.footer-legal span {
+  display: inline;
+}
+.footer-legal span b {
+  color: #f42;
+}
+@media screen and (max-width: 1024px) {
+  .cover {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 180px);
+  }
+  .latest,
+  .deals {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .deals {
+    grid-template-rows: 120px 270px;
+  }
+  .deals-header {
+    display: block;
+  }
+  .deals-header span {
+    position: relative;
+    left: 0;
+  }
+  .hide,
+  .cover-logo,
+  .cover-date,
+  .cover-gradient {
+    display: none;
+  }
+  .cover-header h2 {
+    font-size: 40px;
+  }
+  .cover2-header h2 {
+    font-size: 1.2em;
+  }
+  .cover-header h5 {
+    position: relative;
+    left: 2%;
+    top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .sections section {
+    background-color: green;
+  } */
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    box-shadow: 0 1px rgba(210, 210, 210, 0.2);
+  }
+  .cover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 180px);
+    grid-row-gap: 9px;
+  }
+  .cover-header h2,
+  .cover2-header h2 {
+    font-size: 1.2em;
+  }
+  #cov1 {
+    grid-row: 1/2;
+  }
+  .story .coverby {
+    top: -110px;
+    left: 55px;
+  }
+  .latest {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sections,
+  .deals {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px repeat(3, 240px);
+    grid-row-gap: 18px;
+  }
+
+  #cov1,
+  #cov2,
+  #cov3 {
+    grid-column: 1/2;
+    background-color: green;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav li,
   .hide2 {
     display: none;
   }
+  #burger {
+    width: 18px;
+    height: 18px;
+    padding: 16px;
+    border-left: 1px solid #ccc;
+    display: inline-block;
+  }
+  #latest1,
+  #latest2,
+  #latest3,
+  #latest4,
+  #latest5,
+  #latest6,
+  #latest7,
+  #latest8 {
+    width: 76px;
+    height: 76px;
+  }
+  .story {
+    max-height: 88px;
+    height: 74px;
+  }
+  .story h4 {
+    position: relative;
+    left: 95px;
+    top: -100px;
+  }
+  .footer-legal .wrapper span {
+    display: block;
+  }
 }
+
+/* testing start */
+
+/* testing end */

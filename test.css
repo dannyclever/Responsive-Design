@@ -431,6 +431,17 @@ main {
 .apps h2:hover {
   color: #000;
 }
+.gradient {
+  bottom: 0;
+  left: 0;
+  position: relative;
+  top: 0px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25) url(img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  z-index: 4;
+}
 .popular {
   margin: 0 0 2px 0;
 }
@@ -487,13 +498,14 @@ main {
 }
 .section-popular-header {
   color: #fff;
-  top: 96px;
+  top: -160px;
+  position: relative;
+  padding: 14px;
   bottom: 0;
   left: 0;
-  padding: 14px;
   position: relative;
   right: 0;
-  z-index: 3;
+  z-index: 5;
 }
 .section-popular-section {
   font-size: 13px;
