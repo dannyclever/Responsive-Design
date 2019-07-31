@@ -828,12 +828,9 @@ ul {
     grid-template-rows: 120px 270px;
   }
   .deals-header {
-    display: block;
+    flex-direction: column;
   }
-  .deals-header span {
-    position: relative;
-    left: 0;
-  }
+
   .hide,
   .cover-logo,
   .cover-date,
@@ -861,9 +858,6 @@ ul {
   .popular {
     height: 350px;
   }
-  /* .sections section {
-    background-color: green;
-  } */
 }
 
 @media screen and (max-width: 768px) {
