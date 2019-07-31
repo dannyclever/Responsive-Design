@@ -5,7 +5,7 @@ Microverse curiculum 6th collaborative project
 
 ## Responsive-Design-
 
-In this simple project, We were breaking apart the website for a popular design magazine with which we are probably familiar by now – Smashing Magazine. The goal for this exercise is to start training ourselves to think in terms of visual hierarchy, typography and design principles.
+In this project, we’ll got the chance to build a responsive website. We cloned https://thenextweb.com/ , a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced.
 
 Used:
  * CSS FlexBox
@@ -14,7 +14,7 @@ Used:
  
 ## Authors
 
- * Neto daniel Zinga https://github.com/dannyclever
+ * Neto Daniel Zinga https://github.com/dannyclever
  * Nick Haralampopoulos https://github.com/macnick
 
 ## Screenshot
