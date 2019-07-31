@@ -19,8 +19,8 @@ Used:
 
 ## Screenshot
 
-![screenshot](img/screenshot.jpg) 
+![screenshot](img/screenshot.png) 
 
 ## The Website
 
-Follow the link to acess to the Website: https://macnick.github.io/Design-Teardown/
+Follow the link to acess to the Website: https://github.com/dannyclever/Responsive-Design-
