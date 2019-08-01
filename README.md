@@ -23,4 +23,4 @@ Used:
 
 ## The Website
 
-Follow the link to acess to the Website: https://dannyclever.github.com/Responsive-Design/
+Follow the link to acess to the Website: https://dannyclever.github.io/Responsive-Design/
