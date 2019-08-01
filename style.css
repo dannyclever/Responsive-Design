@@ -1,5 +1,4 @@
 * {
-  /* box-sizing: border-box; */
   font-family: Shentox, sans-serif;
 }
 body {
@@ -318,7 +317,6 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 90px 270px;
-  /* grid-gap: 0.9rem; */
   grid-gap: 0.9rem;
 }
 .deals header {
@@ -365,8 +363,6 @@ main {
 .invest-desc {
   position: relative;
   top: -50px;
-  /* height: 60px;
-  max-height: 60px; */
   font-weight: 700;
   line-height: 1;
   padding: 8px 0 0 84px;
@@ -390,7 +386,6 @@ main {
   position: relative;
   top: 78px;
   padding: 12px 0 0 16px;
-  /* background-color: #fffaf8; */
   font-size: 13px;
   color: #555;
 }
@@ -423,7 +418,6 @@ main {
   grid-template-rows: auto;
   grid-gap: 0.9rem;
   margin: 0 30px;
-  /* max-width: 1240px; */
 }
 .apps h2 {
   color: #f42;
@@ -459,7 +453,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
-  /* width: 100%; */
   display: block;
   opacity: 1;
 }
@@ -552,7 +545,6 @@ h3 {
   font-size: 13px;
   font-weight: 400;
   line-height: 1;
-  /* padding-bottom: 5px; */
   border-bottom: 1px solid #eee;
 }
 .section-headline-title a {
@@ -854,10 +846,6 @@ ul {
   .sections {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .sections section {
-    background-color: green;
-  } */
-}
 
 @media screen and (max-width: 768px) {
   nav {
@@ -937,7 +925,3 @@ ul {
     display: block;
   }
 }
-
-/* testing start */
-
-/* testing end */
