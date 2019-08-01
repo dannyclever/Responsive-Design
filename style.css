@@ -473,12 +473,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-  height: 250px;
-=======
-  /* height: 250px; */
-  /* width: 100%; */
->>>>>>> be61b51357b10f864a3d8507a71dff62973d111e
   display: block;
   opacity: 1;
 }
@@ -880,10 +874,7 @@ ul {
   .popular {
     height: 350px;
   }
-<<<<<<< HEAD
-=======
 }
->>>>>>> be61b51357b10f864a3d8507a71dff62973d111e
 
 @media screen and (max-width: 768px) {
   nav {
